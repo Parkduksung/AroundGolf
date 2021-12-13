@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453443779114",
+    "project_id": "elated-badge-259013",
+    "storage_bucket": "elated-badge-259013.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453443779114:android:a2122e9f16db2a3b852153",
+        "android_client_info": {
+          "package_name": "com.example.aroundgolf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453443779114-omcrcc9fp72tsfkshvdesu9537bs58su.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEJ53nmdJvfaYUmcPWCmakPprtLQF45_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453443779114-omcrcc9fp72tsfkshvdesu9537bs58su.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
