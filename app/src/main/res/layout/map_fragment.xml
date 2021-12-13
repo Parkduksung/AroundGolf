@@ -42,6 +42,7 @@
                 android:layout_height="0dp"
                 android:background="@color/white"
                 android:src="@drawable/ic_search_item"
+                android:onClick="@{()->viewModel.search()}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintDimensionRatio="W,1:1"
                 app:layout_constraintEnd_toStartOf="@id/current_location"
