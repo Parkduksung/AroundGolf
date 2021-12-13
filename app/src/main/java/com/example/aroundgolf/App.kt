@@ -15,6 +15,7 @@ class App : Application() {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         appKoinSetup.setup(this)
         instance = this
+//        KakaoSdk.init(this, "{NATIVE_APP_KEY}")
     }
 
     fun context(): Context = applicationContext
