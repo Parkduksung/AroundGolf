@@ -4,40 +4,45 @@ import android.app.Application
 import androidx.lifecycle.LifecycleObserver
 import com.example.aroundgolf.base.BaseViewModel
 import com.example.aroundgolf.base.ViewState
+import com.example.aroundgolf.data.repo.GolfRepository
+import com.example.aroundgolf.ext.ioScope
+import com.example.aroundgolf.room.GolfEntity
+import com.example.aroundgolf.utils.Result
+import org.koin.java.KoinJavaComponent
 
 class HomeViewModel(app: Application) : BaseViewModel(app), LifecycleObserver {
 
-//
-//    fun addBookmarkItem(item: CampingItem) {
-//        ioScope {
-//            firebaseRepository.getFirebaseAuth().currentUser?.email?.let { userId ->
-//
-//                firebaseRepository.addBookmarkItem(userId, item).addOnCompleteListener { dbResult ->
-//                    if (dbResult.isSuccessful) {
-//                        viewStateChanged(HomeViewState.AddBookmarkItem(item))
-//                    } else {
-//                        viewStateChanged(HomeViewState.Error("즐겨찾기 추가 실패."))
-//                    }
-//                }
-//            }
-//        }
-//    }
-//
-//    fun deleteBookmarkItem(item: CampingItem) {
-//        ioScope {
-//            firebaseRepository.getFirebaseAuth().currentUser?.email?.let { userId ->
-//
-//                firebaseRepository.deleteBookmarkItem(userId, item)
-//                    .addOnCompleteListener { dbResult ->
-//                        if (dbResult.isSuccessful) {
-//                            viewStateChanged(HomeViewState.DeleteBookmarkItem(item))
-//                        } else {
-//                            viewStateChanged(HomeViewState.Error("즐겨찾기 제거 실패."))
-//                        }
-//                    }
-//            }
-//        }
-//    }
+    private val golfRepository by KoinJavaComponent.inject<GolfRepository>(GolfRepository::class.java)
+
+    fun addBookmarkItem(item: GolfEntity) {
+        ioScope {
+
+            when (val result = golfRepository.toggleBookmarkGolf(item)) {
+
+                is Result.Success -> {
+                    viewStateChanged(HomeViewState.AddBookmarkItem(result.data))
+                }
+
+                is Result.Error -> {
+                    viewStateChanged(HomeViewState.Error("addBookmarkItem Error"))
+                }
+            }
+        }
+    }
+
+    fun deleteBookmarkItem(item: GolfEntity) {
+        ioScope {
+            when (val result = golfRepository.toggleBookmarkGolf(item)) {
+                is Result.Success -> {
+                    viewStateChanged(HomeViewState.DeleteBookmarkItem(result.data))
+                }
+
+                is Result.Error -> {
+                    viewStateChanged(HomeViewState.Error("addBookmarkItem Error"))
+                }
+            }
+        }
+    }
 
 
     fun permissionGrant() {
@@ -46,8 +51,8 @@ class HomeViewModel(app: Application) : BaseViewModel(app), LifecycleObserver {
 
     sealed class HomeViewState : ViewState {
         data class Error(val errorMessage: String) : HomeViewState()
-//        data class AddBookmarkItem(val item: CampingItem) : HomeViewState()
-//        data class DeleteBookmarkItem(val item: CampingItem) : HomeViewState()
+        data class AddBookmarkItem(val item: GolfEntity) : HomeViewState()
+        data class DeleteBookmarkItem(val item: GolfEntity) : HomeViewState()
         object PermissionGrant : HomeViewState()
     }
 }

@@ -1,15 +1,18 @@
 package com.example.aroundgolf.viewmodel
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.aroundgolf.base.BaseViewModel
 import com.example.aroundgolf.base.ViewState
+import com.example.aroundgolf.data.repo.GolfRepository
 import com.example.aroundgolf.ext.ioScope
+import com.example.aroundgolf.room.GolfEntity
 import com.example.aroundgolf.utils.GpsTracker
 import com.example.aroundgolf.utils.Result
 import net.daum.mf.map.api.MapPOIItem
 import net.daum.mf.map.api.MapPoint
-import kotlin.math.pow
+import org.koin.java.KoinJavaComponent.inject
 
 class MapViewModel(app: Application) : BaseViewModel(app) {
 
@@ -17,27 +20,40 @@ class MapViewModel(app: Application) : BaseViewModel(app) {
 
     val currentZoomLevel = MutableLiveData<Int>()
 
-
     private val gpsTracker = GpsTracker(app)
 
+    private val golfRepository by inject<GolfRepository>(GolfRepository::class.java)
 
     fun checkBookmarkState(itemName: String) {
+        ioScope {
+            when (val result = golfRepository.getGolfEntity(itemName)) {
+                is Result.Success -> {
+                    viewStateChanged(MapViewState.BookmarkState(result.data.like))
+                }
 
+                is Result.Error -> {
+                    viewStateChanged(MapViewState.Error("checkBookmarkState Error"))
+                }
+            }
+        }
     }
 
     fun toggleBookmarkItem(itemName: String, isBookmark: Boolean) {
-//        goCampingRepository.getSearchList(itemName,
-//            onSuccess = {
-//                val toCampingItem = it.response.body.items.item.toCampingItem()
-//                if (isBookmark) {
-//                    viewStateChanged(MapViewState.AddBookmarkItem(toCampingItem))
-//                } else {
-//                    viewStateChanged(MapViewState.DeleteBookmarkItem(toCampingItem))
-//                }
-//            }, onFailure = {
-//
-//            }
-//        )
+        ioScope {
+            when (val result = golfRepository.getGolfEntity(itemName)) {
+                is Result.Success -> {
+                    if (isBookmark) {
+                        viewStateChanged(MapViewState.AddBookmarkItem(result.data))
+                    } else {
+                        viewStateChanged(MapViewState.DeleteBookmarkItem(result.data))
+                    }
+                }
+
+                is Result.Error -> {
+                    viewStateChanged(MapViewState.Error("toggleBookmarkItem Error"))
+                }
+            }
+        }
     }
 
     fun setCurrentLocation() {
@@ -54,7 +70,7 @@ class MapViewModel(app: Application) : BaseViewModel(app) {
 
                         viewStateChanged(MapViewState.SetCurrentLocation(resultMapPoint))
                         viewStateChanged(MapViewState.HideProgress)
-
+                        viewStateChanged(MapViewState.SetZoomLevel(4))
                     }
                 }
 
@@ -66,103 +82,70 @@ class MapViewModel(app: Application) : BaseViewModel(app) {
         }
     }
 
-    private fun zoomLevelToRadius(zoomLevel: Int): Int {
-        return if (zoomLevel == -2) {
-            ((2.0).pow(-1) * 100).toInt()
-        } else {
-            ((2.0).pow(zoomLevel) * 100).toInt()
+
+    fun search() {
+        viewStateChanged(MapViewState.ShowProgress)
+        ioScope {
+            when (val result = golfRepository.getAll()) {
+                is Result.Success -> {
+
+                    ioScope {
+                        val campingItemList = mutableSetOf<MapPOIItem>()
+
+                        val resultList = result.data
+
+                        viewStateChanged(MapViewState.SetZoomLevel(8))
+
+                        resultList.forEach { item ->
+                            val mapPOIItem = MapPOIItem().apply {
+                                itemName = item.name
+                                mapPoint =
+                                    MapPoint.mapPointWithGeoCoord(
+                                        item.lat,
+                                        item.log
+                                    )
+                                markerType = MapPOIItem.MarkerType.RedPin
+                            }
+                            campingItemList.add(mapPOIItem)
+                        }
+                        viewStateChanged(MapViewState.GetGolfItems(campingItemList.toTypedArray()))
+                        viewStateChanged(MapViewState.HideProgress)
+                    }
+                }
+
+                is Result.Error -> {
+                    viewStateChanged(MapViewState.Error("GetDataError"))
+                }
+            }
         }
     }
 
-
-//    fun searchCampingAroundCurrent() {
-//        currentCenterMapPoint.value?.let { mapPoint ->
-//            getGoCampingLocationList(
-//                mapPoint.mapPointGeoCoord.longitude,
-//                mapPoint.mapPointGeoCoord.latitude,
-//                zoomLevelToRadius(50000)
-//            )
-//        }
-//    }
-
     fun getSelectPOIItemInfo(itemName: String) {
-        viewStateChanged(MapViewState.ShowProgress)
+        ioScope {
+            when (val result = golfRepository.getGolfEntity(itemName)) {
+                is Result.Success -> {
+                    viewStateChanged(MapViewState.GetSelectPOIItem(result.data))
+                }
 
+                is Result.Error -> {
+                    viewStateChanged(MapViewState.Error("getSelectPOIItemInfo Error"))
+                }
+            }
+        }
     }
-
-
-//    private fun getSearchList(keyword: String) {
-//        goCampingRepository.getSearchList(keyword,
-//            onSuccess = {
-//                ioScope {
-//                    val mapPOIItem = MapPOIItem().apply {
-//                        itemName = it.response.body.items.item.facltNm
-//                        mapPoint =
-//                            MapPoint.mapPointWithGeoCoord(
-//                                it.response.body.items.item.mapY,
-//                                it.response.body.items.item.mapX
-//                            )
-//                        markerType = MapPOIItem.MarkerType.RedPin
-//                    }
-//
-//                    viewStateChanged(MapViewState.GetSearchList(mapPOIItem))
-//                }
-//
-//            }, onFailure = {
-//                viewStateChanged(MapViewState.Error("캠핑장을 찾을 수 없습니다."))
-//            })
-//    }
-
-//    private fun getGoCampingLocationList(longitude: Double, latitude: Double, radius: Int) {
-//        viewStateChanged(MapViewState.ShowProgress)
-//        goCampingRepository.getLocationList(longitude, latitude, radius,
-//            onSuccess = {
-//                if (!it.response.body.items.item.isNullOrEmpty()) {
-//
-//                    ioScope {
-//                        val campingItemList = mutableSetOf<MapPOIItem>()
-//
-//                        val resultList = it.response.body.items.item
-//
-//                        viewStateChanged(MapViewState.SetZoomLevel(8))
-//
-//                        resultList.forEach { item ->
-//                            val mapPOIItem = MapPOIItem().apply {
-//                                itemName = item.facltNm
-//                                mapPoint =
-//                                    MapPoint.mapPointWithGeoCoord(item.latitude, item.longitude)
-//                                markerType = MapPOIItem.MarkerType.RedPin
-//                            }
-//                            campingItemList.add(mapPOIItem)
-//                        }
-//
-//                        viewStateChanged(MapViewState.GetGoCampingLocationList(campingItemList.toTypedArray()))
-//                        viewStateChanged(MapViewState.HideProgress)
-//                    }
-//                } else {
-//                    viewStateChanged(MapViewState.Error("캠핑장을 찾을 수 없습니다."))
-//                    viewStateChanged(MapViewState.HideProgress)
-//                }
-//            }, onFailure = {
-//                viewStateChanged(MapViewState.Error("캠핑장을 찾을 수 없습니다."))
-//                viewStateChanged(MapViewState.HideProgress)
-//            })
-//    }
-
 
     sealed class MapViewState : ViewState {
         data class SetZoomLevel(val zoomLevel: Int) : MapViewState()
         data class SetCurrentLocation(val mapPoint: MapPoint) : MapViewState()
-        data class GetGoCampingLocationList(val itemList: Array<MapPOIItem>) : MapViewState()
+        data class GetGolfItems(val items: Array<MapPOIItem>) : MapViewState()
 
-        //        data class GetSelectPOIItem(val item: SearchItem) : MapViewState()
-        data class GetSearchList(val item: MapPOIItem) : MapViewState()
+        data class GetSelectPOIItem(val item: GolfEntity) : MapViewState()
         data class Error(val errorMessage: String) : MapViewState()
         object ShowProgress : MapViewState()
         object HideProgress : MapViewState()
         data class BookmarkState(val isChecked: Boolean) : MapViewState()
-//        data class AddBookmarkItem(val item: CampingItem) : MapViewState()
-//        data class DeleteBookmarkItem(val item: CampingItem) : MapViewState()
+        data class AddBookmarkItem(val item: GolfEntity) : MapViewState()
+        data class DeleteBookmarkItem(val item: GolfEntity) : MapViewState()
     }
 
 }
