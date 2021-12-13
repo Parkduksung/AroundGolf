@@ -52,13 +52,13 @@ class HomeActivity : BaseActivity<ActivityHomeBinding>(R.layout.activity_home) {
                 showToast(message = viewState.errorMessage)
             }
 
-//            is HomeViewModel.HomeViewState.AddBookmarkItem -> {
-//                showToast(message = "즐겨찾기가 추가되었습니다.")
-//            }
-//
-//            is HomeViewModel.HomeViewState.DeleteBookmarkItem -> {
-//                showToast(message = "즐겨찾기가 제거되었습니다.")
-//            }
+            is HomeViewModel.HomeViewState.AddBookmarkItem -> {
+                showToast(message = "즐겨찾기가 추가되었습니다.")
+            }
+
+            is HomeViewModel.HomeViewState.DeleteBookmarkItem -> {
+                showToast(message = "즐겨찾기가 제거되었습니다.")
+            }
         }
     }
 

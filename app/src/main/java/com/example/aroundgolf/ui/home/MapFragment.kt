@@ -10,6 +10,8 @@ import com.example.aroundgolf.base.BaseFragment
 import com.example.aroundgolf.base.ViewState
 import com.example.aroundgolf.databinding.MapFragmentBinding
 import com.example.aroundgolf.ext.hasPermission
+import com.example.aroundgolf.ext.hidePOIInfoContainer
+import com.example.aroundgolf.ext.showPOIInfoContainer
 import com.example.aroundgolf.ext.showToast
 import com.example.aroundgolf.viewmodel.HomeViewModel
 import com.example.aroundgolf.viewmodel.MapViewModel
@@ -55,7 +57,7 @@ class MapFragment : BaseFragment<MapFragmentBinding>(R.layout.map_fragment) {
             }
 
             override fun onMapViewDragStarted(p0: MapView?, p1: MapPoint?) {
-//                binding.containerPoiInfo.hidePOIInfoContainer(requireContext())
+                binding.containerPoiInfo.hidePOIInfoContainer(requireContext())
             }
 
             override fun onMapViewDragEnded(p0: MapView?, p1: MapPoint?) {
@@ -147,12 +149,12 @@ class MapFragment : BaseFragment<MapFragmentBinding>(R.layout.map_fragment) {
     private fun onChangedHomeViewState(viewState: ViewState) {
 
         when (viewState) {
-//            is HomeViewModel.HomeViewState.AddBookmarkItem -> {
-//                binding.itemBookmark.isChecked = true
-//            }
-//            is HomeViewModel.HomeViewState.DeleteBookmarkItem -> {
-//                binding.itemBookmark.isChecked = false
-//            }
+            is HomeViewModel.HomeViewState.AddBookmarkItem -> {
+                binding.itemBookmark.isChecked = true
+            }
+            is HomeViewModel.HomeViewState.DeleteBookmarkItem -> {
+                binding.itemBookmark.isChecked = false
+            }
 
             is HomeViewModel.HomeViewState.PermissionGrant -> {
                 initUi()
@@ -167,16 +169,10 @@ class MapFragment : BaseFragment<MapFragmentBinding>(R.layout.map_fragment) {
                 setCurrentLocation(viewState.mapPoint)
             }
 
-            is MapViewModel.MapViewState.GetGoCampingLocationList -> {
-                campingItemList.addAll(viewState.itemList)
+            is MapViewModel.MapViewState.GetGolfItems -> {
+                campingItemList.addAll(viewState.items)
                 binding.containerMap.removeAllPOIItems()
-                binding.containerMap.addPOIItems(viewState.itemList)
-            }
-
-            is MapViewModel.MapViewState.GetSearchList -> {
-                binding.containerMap.addPOIItem(viewState.item)
-                binding.containerMap.setMapCenterPoint(viewState.item.mapPoint, true)
-
+                binding.containerMap.addPOIItems(viewState.items)
             }
 
             is MapViewModel.MapViewState.SetZoomLevel -> {
@@ -187,13 +183,13 @@ class MapFragment : BaseFragment<MapFragmentBinding>(R.layout.map_fragment) {
                 showToast(message = viewState.errorMessage)
             }
 
-//            is MapViewModel.MapViewState.GetSelectPOIItem -> {
-//                with(binding) {
-//                    containerPoiInfo.showPOIInfoContainer(requireContext())
-//                    itemName.text = viewState.item.facltNm
-//                    itemLocation.text = viewState.item.addr1
-//                }
-//            }
+            is MapViewModel.MapViewState.GetSelectPOIItem -> {
+                with(binding) {
+                    containerPoiInfo.showPOIInfoContainer(requireContext())
+                    itemName.text = viewState.item.name
+                    itemLocation.text = viewState.item.address
+                }
+            }
 
             is MapViewModel.MapViewState.ShowProgress -> {
                 binding.progressbar.bringToFront()
@@ -205,17 +201,17 @@ class MapFragment : BaseFragment<MapFragmentBinding>(R.layout.map_fragment) {
             }
 
 
-//            is MapViewModel.MapViewState.BookmarkState -> {
-//                binding.itemBookmark.isChecked = viewState.isChecked
-//            }
-//
-//            is MapViewModel.MapViewState.AddBookmarkItem -> {
-//                homeViewModel.addBookmarkItem(viewState.item)
-//            }
-//
-//            is MapViewModel.MapViewState.DeleteBookmarkItem -> {
-//                homeViewModel.deleteBookmarkItem(viewState.item)
-//            }
+            is MapViewModel.MapViewState.BookmarkState -> {
+                binding.itemBookmark.isChecked = viewState.isChecked
+            }
+
+            is MapViewModel.MapViewState.AddBookmarkItem -> {
+                homeViewModel.addBookmarkItem(viewState.item)
+            }
+
+            is MapViewModel.MapViewState.DeleteBookmarkItem -> {
+                homeViewModel.deleteBookmarkItem(viewState.item)
+            }
 
         }
     }
