@@ -3,7 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_call.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable-v24/ic_cancel.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable-v24/ic_favorite.xml" value="0.1453125" />
+        <entry key="app/src/main/res/drawable-v24/ic_favorite_gray.xml" value="0.2635897435897436" />
+        <entry key="app/src/main/res/drawable-v24/ic_favorite_white.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable-v24/ic_link.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable-v24/ic_location.xml" value="0.2635897435897436" />
+        <entry key="app/src/main/res/drawable-v24/ic_place.xml" value="0.1453125" />
+        <entry key="app/src/main/res/drawable-v24/ic_search.xml" value="0.1453125" />
+        <entry key="app/src/main/res/drawable-v24/ic_search_item.xml" value="0.2635897435897436" />
+        <entry key="app/src/main/res/drawable-v24/round_bookmark_no.xml" value="0.2635897435897436" />
+        <entry key="app/src/main/res/drawable-v24/round_bookmark_ok.xml" value="0.262037037037037" />
+        <entry key="app/src/main/res/drawable-v24/round_link.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable-v24/selector_checkbox_bookmark.xml" value="0.2635897435897436" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.12916666666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2375" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.12916666666666668" />
+        <entry key="app/src/main/res/layout/bookmark_fragment.xml" value="0.12916666666666668" />
+        <entry key="app/src/main/res/layout/item_bookmark.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/map_fragment.xml" value="0.12916666666666668" />
       </map>
     </option>
   </component>
