@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- START DEFINES REMOTE EXPLORER -->
+    <item
+        android:id="@+id/re_menu_filehistory"
+        android:title="@string/re_menu_transferfiles_history">
+    </item>
+<!--     <item
+        android:id="@+id/re_menu_dirfaverite"
+        android:title="@string/re_menu_directory_favorite">
+    </item> -->
+    
+    <item
+        android:id="@+id/re_menu_exit"
+        android:title="@string/re_menu_explorer_exit">
+    </item>
+    
+    <!-- END DEFINES REMOTE EXPLORER -->
+
+</menu>

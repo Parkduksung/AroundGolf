@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<RelativeLayout android:id="@+id/canvasBox"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="@dimen/padding_5"
+		android:background="@drawable/bg_canvas_border">
+
+		<com.rsupport.rv.viewer.sdk.view.ScreenCanvasGLSurfaceViewHX
+			android:id="@+id/canvas_surface_hx"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			/>
+		<View android:id="@+id/bg_transparency"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@drawable/translucent_background"
+			android:visibility="gone"/>
+
+		<TextView android:id="@+id/txt_packet_size"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_alignParentBottom="true"
+			android:textColor="@color/re_dialog_alert_recommend"
+			android:layout_marginLeft="@dimen/margin_10"
+			android:layout_marginBottom="@dimen/margin_10"
+			android:visibility="gone"/>
+
+	</RelativeLayout>
+</merge>
+    

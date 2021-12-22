@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 태블릿용 리소스가 ASP에만 포함되는데, 소스코드에서 Generated R 값을 사용하기 때문에 빌드오류 방지를 위해 추가하는 항목임 -->
+    <dimen name="special_keyboard_land_max_width">200dp</dimen>
+    <dimen name="special_keyboard_port_max_width">200dp</dimen>
+    <dimen name="margin_45">45dp</dimen>
+    <dimen name="margin_90">90dp</dimen>
+    <dimen name="margin_162">162dp</dimen>
+
+    <item type="id" name="btn_agent_login" />
+    <item type="id" name="amtpower" />
+    <item type="id" name="btn_apply" />
+</resources>

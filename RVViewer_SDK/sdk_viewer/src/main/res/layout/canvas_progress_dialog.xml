@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/color16">
+    
+    <LinearLayout
+        android:id="@+id/process_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_9"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@drawable/bg_tip"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_22"
+        android:paddingLeft="@dimen/margin_14"
+        android:paddingRight="@dimen/margin_14"
+        android:paddingTop="@dimen/padding_12">
+        
+        <TextView android:id="@+id/progress_tip_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/color16"
+	        android:textSize="@dimen/size01"
+	        android:textStyle="bold" />
+	
+	    <ImageView android:id="@+id/progress_tip_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal" />
+	
+	    <TextView android:id="@+id/progress_tip_message"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/color16"
+	        android:textSize="@dimen/size04" />
+        
+    </LinearLayout>
+	
+    <ImageView android:id="@+id/progress_image"
+        app:srcCompat="@drawable/img_processing"
+	   	android:layout_width="wrap_content"
+	   	android:layout_height="wrap_content" 
+	   	android:layout_centerHorizontal="true"
+	   	android:layout_below="@id/process_tip"
+	   	/>
+
+    <TextView
+        android:id="@+id/progress_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin_14"
+        android:layout_below="@id/progress_image"
+        android:textSize="@dimen/size03"
+        android:textColor="@color/color04"
+        android:text="@string/remoteview_process_message"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/margin_26"
+        android:layout_marginRight="@dimen/margin_26" />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_text"
+        android:layout_marginTop="@dimen/margin_12"
+        android:gravity="center"
+        android:textSize="@dimen/size01"
+        android:textColor="@color/color04"
+        android:text="@string/remoteview_waiting_message"
+        android:layout_marginLeft="@dimen/margin_26"
+        android:layout_marginRight="@dimen/margin_26" />
+</RelativeLayout>

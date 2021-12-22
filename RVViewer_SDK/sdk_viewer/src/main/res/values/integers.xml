@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer-array name="ascii">
+	    <item>0</item>
+	    <item>1</item>
+	    <item>2</item>
+	    <item>3</item>
+	    <item>4</item>
+	    <item>5</item>
+	    <item>6</item>
+	    <item>7</item>
+	    <item>8</item>
+	    <item>9</item>
+	    <item>10</item>
+	    <item>11</item>
+	    <item>12</item>
+	    <item>13</item>
+	    <item>14</item>
+	    <item>15</item>
+	    <item>16</item>
+	    <item>17</item>
+	    <item>18</item>
+	    <item>19</item>
+	    <item>20</item>
+	    <item>21</item>
+	    <item>22</item>
+	    <item>23</item>
+	    <item>24</item>
+	    <item>25</item>
+	    <item>26</item>
+	    <item>27</item>
+	    <item>28</item>
+	    <item>29</item>
+	   	<item>30</item>
+	    <item>31</item>
+	    <item>32</item>
+	    <item>33</item>
+	    <item>34</item>
+	    <item>35</item>
+	    <item>36</item>
+	    <item>37</item>
+	    <item>38</item>
+	    <item>39</item>
+	   	<item>40</item>
+	    <item>41</item>
+	    <item>42</item>
+	    <item>43</item>
+	    <item>44</item>
+	    <item>45</item>
+	    <item>46</item>
+	    <item>47</item>
+	    <item>48</item>
+	    <item>49</item>
+	   	<item>50</item>
+	    <item>51</item>
+	    <item>52</item>
+	    <item>53</item>
+	    <item>54</item>
+	    <item>55</item>
+	    <item>56</item>
+	    <item>57</item>
+	    <item>58</item>
+	    <item>59</item>
+	   	<item>60</item>
+	    <item>61</item>
+	    <item>62</item>
+	    <item>63</item>
+	    <item>64</item>
+	    <item>65</item>
+	    <item>66</item>
+	    <item>67</item>
+	    <item>68</item>
+	    <item>69</item>
+	    <item>70</item>
+	    <item>71</item>
+	    <item>72</item>
+	    <item>73</item>
+	    <item>74</item>
+	    <item>75</item>
+	    <item>76</item>
+	    <item>77</item>
+	    <item>78</item>
+	    <item>79</item>
+	    <item>80</item>
+	    <item>81</item>
+	    <item>82</item>
+	    <item>83</item>
+	    <item>84</item>
+	    <item>85</item>
+	    <item>86</item>
+	    <item>87</item>
+	    <item>88</item>
+	    <item>89</item>
+	    <item>90</item>
+	    <item>91</item>
+	    <item>92</item>
+	    <item>93</item>
+	    <item>94</item>
+	    <item>95</item>
+	    <item>96</item>
+	    <item>97</item>
+	    <item>98</item>
+	    <item>99</item>
+	    <item>100</item>
+	    <item>101</item>
+	    <item>102</item>
+	    <item>103</item>
+	    <item>104</item>
+	    <item>105</item>
+	    <item>106</item>
+	    <item>107</item>
+	    <item>108</item>
+	    <item>109</item>
+	    <item>110</item>
+	    <item>111</item>
+	    <item>112</item>
+	    <item>113</item>
+	    <item>114</item>
+	    <item>115</item>
+	    <item>116</item>
+	    <item>117</item>
+	    <item>118</item>
+	    <item>119</item>
+	    <item>120</item>
+	    <item>121</item>
+	    <item>122</item>
+	    <item>123</item>
+	    <item>124</item>
+	    <item>125</item>
+	    <item>126</item>
+	    <item>127</item>
+	    <item>128</item>
+	    <item>129</item>
+	    <item>130</item>
+	    <item>131</item>
+	    <item>132</item>
+	    <item>133</item>
+	    <item>134</item>
+	    <item>135</item>
+	    <item>136</item>
+	    <item>137</item>
+	    <item>138</item>
+	    <item>139</item>
+	    <item>140</item>
+	    <item>141</item>
+	    <item>142</item>
+	    <item>143</item>
+	    <item>144</item>
+	    <item>145</item>
+	    <item>146</item>
+	    <item>147</item>
+	    <item>148</item>
+	    <item>149</item>
+	   	<item>150</item>
+	    <item>151</item>
+	    <item>152</item>
+	    <item>153</item>
+	    <item>154</item>
+	    <item>155</item>
+	    <item>156</item>
+	    <item>157</item>
+	    <item>158</item>
+	    <item>159</item>
+	   	<item>160</item>
+	    <item>161</item>
+	    <item>162</item>
+	    <item>163</item>
+	    <item>164</item>
+	    <item>165</item>
+	    <item>166</item>
+	    <item>167</item>
+	    <item>168</item>
+	    <item>169</item>
+	   	<item>170</item>
+	    <item>171</item>
+	    <item>172</item>
+	    <item>173</item>
+	    <item>174</item>
+	    <item>175</item>
+	    <item>176</item>
+	    <item>177</item>
+	    <item>178</item>
+	    <item>179</item>
+	    <item>180</item>
+	    <item>181</item>
+	    <item>182</item>
+	    <item>183</item>
+	    <item>184</item>
+	    <item>185</item>
+	    <item>186</item>
+	    <item>187</item>
+	    <item>188</item>
+	    <item>189</item>
+	    <item>190</item>
+	    <item>191</item>
+	    <item>192</item>
+	    <item>193</item>
+	    <item>194</item>
+	    <item>195</item>
+	    <item>196</item>
+	    <item>197</item>
+	    <item>198</item>
+	    <item>199</item>
+	   	<item>200</item>
+	</integer-array>
+	
+	<integer name="i0">0</integer>
+	<integer name="i1">1</integer>
+	<integer name="i2">2</integer>
+	<integer name="i3">3</integer>
+	<integer name="i4">4</integer>
+	<integer name="i5">5</integer>
+	<integer name="i6">6</integer>
+	<integer name="i7">7</integer>
+	<integer name="i8">8</integer>
+	<integer name="i9">9</integer>
+	<integer name="i10">10</integer>
+	<integer name="i11">11</integer>
+	<integer name="i12">12</integer>
+	<integer name="i13">13</integer>
+	<integer name="i14">14</integer>
+	<integer name="i15">15</integer>
+	<integer name="i16">16</integer>
+	<integer name="i17">17</integer>
+	<integer name="i18">18</integer>
+	<integer name="i19">19</integer>
+	<integer name="i20">20</integer>
+	<integer name="i21">21</integer>
+	<integer name="i22">22</integer>
+	<integer name="i23">23</integer>
+	<integer name="i24">24</integer>
+	<integer name="i25">25</integer>
+	<integer name="i26">26</integer>
+	<integer name="i27">27</integer>
+	<integer name="i28">28</integer>
+	<integer name="i29">29</integer>
+	<integer name="i30">30</integer>
+	<integer name="i31">31</integer>
+	<integer name="i32">32</integer>
+	<integer name="i33">33</integer>
+	<integer name="i34">34</integer>
+	<integer name="i35">35</integer>
+	<integer name="i36">36</integer>
+	<integer name="i37">37</integer>
+	<integer name="i38">38</integer>
+	<integer name="i39">39</integer>
+	<integer name="i40">40</integer>
+	<integer name="i41">41</integer>
+	<integer name="i42">42</integer>
+	<integer name="i43">43</integer>
+	<integer name="i44">44</integer>
+	<integer name="i45">45</integer>
+	<integer name="i46">46</integer>
+	<integer name="i47">47</integer>
+	<integer name="i48">48</integer>
+	<integer name="i49">49</integer>
+	<integer name="i50">50</integer>
+	<integer name="i51">51</integer>
+	<integer name="i52">52</integer>
+	<integer name="i53">53</integer>
+	<integer name="i54">54</integer>
+	<integer name="i55">55</integer>
+	<integer name="i56">56</integer>
+	<integer name="i57">57</integer>
+	<integer name="i58">58</integer>
+	<integer name="i59">59</integer>
+	<integer name="i60">60</integer>
+	<integer name="i61">61</integer>
+	<integer name="i62">62</integer>
+	<integer name="i63">63</integer>
+	<integer name="i64">64</integer>
+	<integer name="i65">65</integer>
+	<integer name="i66">66</integer>
+	<integer name="i67">67</integer>
+	<integer name="i68">68</integer>
+	<integer name="i69">69</integer>
+	<integer name="i70">70</integer>
+	<integer name="i71">71</integer>
+	<integer name="i72">72</integer>
+	<integer name="i73">73</integer>
+	<integer name="i74">74</integer>
+	<integer name="i75">75</integer>
+	<integer name="i76">76</integer>
+	<integer name="i77">77</integer>
+	<integer name="i78">78</integer>
+	<integer name="i79">79</integer>
+	<integer name="i80">80</integer>
+	<integer name="i81">81</integer>
+	<integer name="i82">82</integer>
+	<integer name="i83">83</integer>
+	<integer name="i84">84</integer>
+	<integer name="i85">85</integer>
+	<integer name="i86">86</integer>
+	<integer name="i87">87</integer>
+	<integer name="i88">88</integer>
+	<integer name="i89">89</integer>
+	<integer name="i90">90</integer>
+	<integer name="i91">91</integer>
+	<integer name="i92">92</integer>
+	<integer name="i93">93</integer>
+	<integer name="i94">94</integer>
+	<integer name="i95">95</integer>
+	<integer name="i96">96</integer>
+	<integer name="i97">97</integer>
+	<integer name="i98">98</integer>
+	<integer name="i99">99</integer>
+	<integer name="i100">100</integer>
+	<integer name="i101">101</integer>
+	<integer name="i102">102</integer>
+	<integer name="i103">103</integer>
+	<integer name="i104">104</integer>
+	<integer name="i105">105</integer>
+	<integer name="i106">106</integer>
+	<integer name="i107">107</integer>
+	<integer name="i108">108</integer>
+	<integer name="i109">109</integer>
+	<integer name="i110">110</integer>
+	<integer name="i111">111</integer>
+	<integer name="i112">112</integer>
+	<integer name="i113">113</integer>
+	<integer name="i114">114</integer>
+	<integer name="i115">115</integer>
+	<integer name="i116">116</integer>
+	<integer name="i117">117</integer>
+	<integer name="i118">118</integer>
+	<integer name="i119">119</integer>
+	<integer name="i120">120</integer>
+	<integer name="i121">121</integer>
+	<integer name="i122">122</integer>
+	<integer name="i123">123</integer>
+	<integer name="i124">124</integer>
+	<integer name="i125">125</integer>
+	<integer name="i126">126</integer>
+	<integer name="i127">127</integer>
+	<integer name="i128">128</integer>
+	<integer name="i129">129</integer>
+	<integer name="i130">130</integer>
+	<integer name="i131">131</integer>
+	<integer name="i132">132</integer>
+	<integer name="i133">133</integer>
+	<integer name="i134">134</integer>
+	<integer name="i135">135</integer>
+	<integer name="i136">136</integer>
+	<integer name="i137">137</integer>
+	<integer name="i138">138</integer>
+	<integer name="i139">139</integer>
+	<integer name="i140">140</integer>
+	<integer name="i141">141</integer>
+	<integer name="i142">142</integer>
+	<integer name="i143">143</integer>
+	<integer name="i144">144</integer>
+	<integer name="i145">145</integer>
+	<integer name="i146">146</integer>
+	<integer name="i147">147</integer>
+	<integer name="i148">148</integer>
+	<integer name="i149">149</integer>
+	<integer name="i150">150</integer>
+	<integer name="i151">151</integer>
+	<integer name="i152">152</integer>
+	<integer name="i153">153</integer>
+	<integer name="i154">154</integer>
+	<integer name="i155">155</integer>
+	<integer name="i156">156</integer>
+	<integer name="i157">157</integer>
+	<integer name="i158">158</integer>
+	<integer name="i159">159</integer>
+	<integer name="i160">160</integer>
+	<integer name="i161">161</integer>
+	<integer name="i162">162</integer>
+	<integer name="i163">163</integer>
+	<integer name="i164">164</integer>
+	<integer name="i165">165</integer>
+	<integer name="i166">166</integer>
+	<integer name="i167">167</integer>
+	<integer name="i168">168</integer>
+	<integer name="i169">169</integer>
+	<integer name="i170">170</integer>
+	<integer name="i171">171</integer>
+	<integer name="i172">172</integer>
+	<integer name="i173">173</integer>
+	<integer name="i174">174</integer>
+	<integer name="i175">175</integer>
+	<integer name="i176">176</integer>
+	<integer name="i177">177</integer>
+	<integer name="i178">178</integer>
+	<integer name="i179">179</integer>
+	<integer name="i180">180</integer>
+	<integer name="i181">181</integer>
+	<integer name="i182">182</integer>
+	<integer name="i183">183</integer>
+	<integer name="i184">184</integer>
+	<integer name="i185">185</integer>
+	<integer name="i186">186</integer>
+	<integer name="i187">187</integer>
+	<integer name="i188">188</integer>
+	<integer name="i189">189</integer>
+	<integer name="i190">190</integer>
+	<integer name="i191">191</integer>
+	<integer name="i192">192</integer>
+	<integer name="i193">193</integer>
+	<integer name="i194">194</integer>
+	<integer name="i195">195</integer>
+	<integer name="i196">196</integer>
+	<integer name="i197">197</integer>
+	<integer name="i198">198</integer>
+	<integer name="i199">199</integer>
+	
+</resources>

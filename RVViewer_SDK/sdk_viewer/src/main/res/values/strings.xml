@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="is_xlarge">false</string>
+    <string name="aboutproductname" translatable="false">RemoteView for Android</string>
+    <string name="copyright1" translatable="false">Copyright ⓒ 2001~2014 RSUPPORT Co., Ltd.</string>
+    <string name="copyright2" translatable="false">All rights reserved.</string>
+    <string name="app_name" translatable="false">RemoteView</string>
+    <string name="app_name_space" translatable="false">Remote View</string>
+    <string name="serverip_personal" translatable="false">https://www.rview.com</string>
+    <string name="serverip_biz" translatable="false">https://www.rview.com</string>
+    <string name="copyright" translatable="false">Powered by RSUPPORT</string>
+    <string name="serverip_australia" translatable="false">https://anz.rview.com</string>
+    <string name="aboutweblink" translatable="false">https://www.rview.com</string>
+    <string name="faqweblink" translatable="false">https://content.rview.com</string>
+    <string name="more_settings_url" translatable="false">/mobile/wol</string>
+    <string name="more_settings_remotewol_url" translatable="false">/mobile/wolusing</string>
+    <string name="no_agent_weblink_url" translatable="false">/Mobile/Install</string>
+    <string name="url_proxy_help" translatable="false">/Service/Help</string>
+    <string name="url_join" translatable="false">/Mobile/Join</string>
+    <string name="url_licence" translatable="false">/Mobile/LicenseforAndroid</string>
+    <string name="url_notice" translatable="false">/Mobile/NoticeList</string>
+    <string name="url_join_tcl" translatable="false">/Mobile/Join/E?partner=partnertcl</string>
+    <string name="cn_aboutweblink" translatable="false">http://www.rview.cn</string>
+    <string name="cn_serverip_personal" translatable="false">https://www.rview.cn</string>
+    <string name="cn_serverip_biz" translatable="false">https://biz.rview.cn</string>
+    <string name="mailtocompany" translatable="false">http://m.helpdesk.nate.com/m/main.jsp</string>
+    <string name="faq" translatable="false">FAQ</string>
+    <string name="menu_home" translatable="false">Home</string>
+    <string name="menu_back" translatable="false">Back</string>
+    <string name="menu_menu" translatable="false">Menu</string>
+    <string name="menu_shortcut_ctrl_space" translatable="false">Ctrl+Space</string>
+    <string name="menu_shortcut_cmd_space" translatable="false">Cmd+Space</string>
+    <string name="lang_korea" translatable="false">한국어</string>
+    <string name="lang_us" translatable="false">English</string>
+    <string name="lang_japan" translatable="false">日本語</string>
+    <string name="lang_china" translatable="false">中文 (简体)</string>
+    <string name="lang_taiwan" translatable="false">中文 (繁體)</string>
+    <string name="lang_spain" translatable="false">Español</string>
+    <string name="lang_portugal" translatable="false">português</string>
+    <string name="label_http" translatable="false">http://</string>
+    <string name="label_https" translatable="false">https://</string>
+
+    <string name="tutorial_cn_desc_2_2">www.rview.cn</string>
+    <string name="tutorial_cn_corp_desc_2_2">biz.rview.cn</string>
+    <string name="mailtofriend_downloadurl">http://goo.gl/Zg5kY4</string>
+    <string name="mailtofriend_iphone_downloadurl">http://bit.ly/1qTt9Jq</string>
+    <string name="mailtofriend_ipad_downloadurl">http://bit.ly/1qTt9Jq</string>
+    <string name="mailtofriend_videourl">http://youtu.be/35-VBm_T5wI</string>
+    <string name="mailtofriend_cn_downloadurl">hiqpk : http://goo.gl/E4y2Ej qfan : http://goo.gl/qfq0eb</string>
+    <string name="mailtofriend_cn_iphone_downloadurl">http://goo.gl/WJW3fF</string>
+    <string name="mailtofriend_cn_ipad_downloadurl">http://goo.gl/zBjWV3</string>
+    <string name="mailtofriend_cn_videourl">http://youtu.be/gsowW9b8MnI</string>
+    <string name="mailtofriend_cn_homepage">http://www.rview.cn</string>
+    <string name="mailfeedback_cn_to">support.cn@rsupport.com</string>
+    <string name="mailtofriend_homepage">https://content.rview.com</string>
+    <string name="mailfeedback_to">support.us@rsupport.com</string>
+    <string name="faqnewlink">https://help.rview.com/hc/en-us</string>
+    <string name="url_agreement">https://content.rview.com/en-int/terms-and-conditions/</string>
+    <string name="url_privacy">https://content.rview.com/en-int/privacy-policy/</string>
+
+    <!--  NateOn solution  -->
+    <string name="login_link_serviceinfo" translatable="false">http://rsupport.nate.com/rview/r8/service/MobileRemote.aspx</string>
+    <string name="login_link_searchid" translatable="false">https://member.nate.com/mnate/helpdesk/find.sk</string>
+    <string name="login_link_searchpwd" translatable="false">https://member.nate.com/mnate/helpdesk/findPWForm.sk</string>
+    <string name="computer_retry_pc" translatable="false"></string>
+    <string name="computer_retry_iphone" translatable="false"></string>
+</resources>
+

@@ -1,0 +1,85 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="lollipop">
+    <aapt:attr name="android:drawable">
+        <vector
+            android:name="vector"
+            android:width="24dp"
+            android:height="24dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+
+            <group
+                android:name="minute"
+                android:pivotX="12"
+                android:pivotY="12">
+
+                <path
+                    android:fillAlpha="0"
+                    android:fillColor="#FF000000"
+                    android:pathData="M12,12 L12,1.50"
+                    android:strokeWidth="2.5"
+                    android:strokeAlpha="1"
+                    android:strokeColor="#ffffff"
+                    android:strokeLineCap="round" />
+            </group>
+
+            <group
+                android:name="hour"
+                android:pivotX="12"
+                android:pivotY="12">
+
+                <path
+                    android:fillAlpha="0"
+                    android:fillColor="#FF000000"
+                    android:pathData="M12,6 L12,12"
+                    android:strokeWidth="2.5"
+                    android:strokeAlpha="1"
+                    android:strokeColor="#FFFFFF"
+                    android:strokeLineCap="round" />
+            </group>
+
+            <path
+                android:fillAlpha="0"
+                android:fillColor="#FF000000"
+                android:pathData="M22.5,12C22.5,17.8 17.8,22.5 12,22.5C6.2,22.5 1.5,17.8 1.5,12C1.5,6.2 6.2,1.5 12,1.5C17.8,1.5 22.5,6.2 22.5,12Z"
+                android:strokeWidth="2.5"
+                android:strokeAlpha="1"
+                android:strokeColor="#ffffff" />
+
+        </vector>
+    </aapt:attr>
+
+    <target android:name="minute">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="1000"
+                    android:interpolator="@android:anim/linear_interpolator"
+                    android:propertyName="rotation"
+                    android:repeatCount="infinite"
+                    android:startOffset="150"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType" />
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="hour">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="12000"
+                    android:interpolator="@android:anim/linear_interpolator"
+                    android:propertyName="rotation"
+                    android:repeatCount="infinite"
+                    android:startOffset="150"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:valueType="floatType" />
+            </set>
+        </aapt:attr>
+    </target>
+</animated-vector>

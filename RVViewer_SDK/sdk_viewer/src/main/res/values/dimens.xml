@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* 
+**
+** Copyright 2008, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License"); 
+** you may not use this file except in compliance with the License. 
+** You may obtain a copy of the License at 
+**
+**     http://www.apache.org/licenses/LICENSE-2.0 
+**
+** Unless required by applicable law or agreed to in writing, software 
+** distributed under the License is distributed on an "AS IS" BASIS, 
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. 
+** See the License for the specific language governing permissions and 
+** limitations under the License.
+*/
+-->
+
+<resources>
+
+    <!-- Check Box -->
+    <dimen name="margin_check_right">5dip</dimen>
+
+    <!-- Detail Info -->
+    <dimen name="detail_item_height">38dip</dimen>
+
+    <!-- START DEFINES REMOTE EXPLORER -->
+    <dimen name="re_dialog_text_linespace">5sp</dimen>
+    <dimen name="re_fontsize_10">10dip</dimen>
+    <dimen name="re_fontsize_11">11dip</dimen>
+    <dimen name="re_fontsize_12">12dip</dimen>
+    <dimen name="re_fontsize_13">13dip</dimen>
+    <dimen name="re_fontsize_14">14dip</dimen>
+
+    <!-- END DEFINES REMOTE EXPLORER -->
+
+    <dimen name="size01">12dp</dimen>
+    <dimen name="size02">9dp</dimen>
+    <dimen name="size03">14dp</dimen>
+    <dimen name="size04">10dp</dimen>
+    <dimen name="size05">20dp</dimen>
+    <dimen name="size06">26dp</dimen>
+    <dimen name="size07">28dp</dimen>
+    <dimen name="size01_lineheight">16dp</dimen>
+    <dimen name="size02_lineheight">12dp</dimen>
+    <dimen name="size03_lineheight">18dp</dimen>
+    <dimen name="header_height">44dp</dimen>
+    <dimen name="header_shadow_height">2dp</dimen>
+    <dimen name="agentlist_height">80dp</dimen>
+    <dimen name="agentlist_item_height">80.5dp</dimen>
+    <dimen name="agentlist_detail_width">41dp</dimen>
+    <dimen name="agentlist_detail_swipe_width">42dp</dimen>
+    <dimen name="agentlist_no_agent_width">456dp</dimen>
+    <dimen name="contents_button_height">40dp</dimen>
+    <dimen name="langage_textview_height">27dp</dimen>
+    <dimen name="agentinfo_edittext_height">38dip</dimen>
+    <dimen name="typing_edittext_height">29dp</dimen>
+    <dimen name="title_sub_height">32dp</dimen>
+    <dimen name="margin_150">150dp</dimen>
+    <dimen name="margin_80">80dp</dimen>
+    <dimen name="margin_72">72dp</dimen>
+    <dimen name="margin_62">62dp</dimen>
+    <dimen name="margin_50">50dp</dimen>
+    <dimen name="margin_44">44dp</dimen>
+    <dimen name="margin_42">42dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+    <dimen name="margin_36">36dp</dimen>
+    <dimen name="margin_33">33dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+    <dimen name="margin_30">30dp</dimen>
+    <dimen name="margin_26">26dp</dimen>
+    <dimen name="margin_24">24dp</dimen>
+    <dimen name="margin_22">22dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_18">18dp</dimen>
+    <dimen name="margin_17">17dp</dimen>
+    <dimen name="margin_16">16dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_13">13dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_11">11dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_9">9dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="margin_7">7dp</dimen>
+    <dimen name="margin_6">6dp</dimen>
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="margin_3">3dp</dimen>
+    <dimen name="margin_2">2dp</dimen>
+    <dimen name="margin_1">1dp</dimen>
+    <dimen name="margin_6_minus">-6dp</dimen>
+    <dimen name="line_1">0.5dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_6">6dp</dimen>
+    <dimen name="padding_7">7dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_9">9dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_12">12dp</dimen>
+    <dimen name="padding_14">14dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="padding_22">22dp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="toolbar_height">54dp</dimen>
+    <dimen name="toolbar_item_width">67dp</dimen>
+    <dimen name="toolbar_prev_width">26dp</dimen>
+    <dimen name="toolbar_next_width">26dp</dimen>
+    <dimen name="toolbar_list_width">440dp</dimen>
+    <dimen name="toolbar_list_height">286dp</dimen>
+    <dimen name="point_arrow_top_margin">-2.7dp</dimen>
+    <dimen name="point_arrow_botton_margin">-5.5dp</dimen>
+    <dimen name="screensettings_quality_height">100dp</dimen>
+    <dimen name="screensettings_quality_land_height">174dp</dimen>
+    <dimen name="monitor_number_width">90dp</dimen>
+    <dimen name="product_select_max_width">492dp</dimen>
+    <dimen name="special_keyboard_max_width">528dp</dimen>
+
+    <dimen name="width_644">644dp</dimen>
+    <dimen name="width_416">416dp</dimen>
+
+    <!-- DialogGroup -->
+    <dimen name="dialoggroup_bottommargin">10dip</dimen>
+
+    <!-- Toast -->
+
+    <!-- Dialog -->
+    <dimen name="dialog_min_content_height">94dip</dimen>
+    <dimen name="dialog_max_width">290dp</dimen>
+    <dimen name="dialog_min_height">172dp</dimen>
+    <dimen name="dialog_list_height">300dp</dimen>
+
+    <!-- indexBar -->
+    <dimen name="indexbar_width">20dip</dimen>
+    <dimen name="seeking_text_width">18dp</dimen>
+
+    <!-- EditText (common) -->
+    <dimen name="edittext_height_32">32dip</dimen>
+
+    <!-- resolution wheel -->
+    <dimen name="wheel_item_height">26dip</dimen>
+    <dimen name="wheel_ses_item_height">39dip</dimen>
+    <dimen name="wheel_multiimg_width">39dip</dimen>
+    <dimen name="wheel_full_height">143dip</dimen>
+ <!-- (26*4) + 39 -->
+    <!-- (26*4) / 2 -->
+
+    <!-- about -->
+    <dimen name="about_table_wrapper_width">@dimen/match_parent</dimen>
+    <dimen name="about_group_margin_bottom">@dimen/margin_10</dimen>
+    <dimen name="about_group_margin_top">@dimen/margin_14</dimen>
+
+    <!-- quickmenu -->
+    <dimen name="quickmenu_edit_my_header_height">47dp</dimen>
+    <dimen name="quickmenu_edit_preset_header_height">46dp</dimen>
+    <dimen name="quickmenu_edit_my_item_height">52dp</dimen>
+
+    <dimen name="titlebar_side_button_width">@dimen/wrap_content</dimen>
+    <dimen name="titlebar_side_button_height">@dimen/wrap_content</dimen>
+    '
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/frg_tutorial">
+
+    <fragment
+        android:id="@+id/frg_tutorial"
+        android:name="rsupport.androidViewer.settings.resolution.ResolutionSettingFragment"
+        tools:layout="@layout/fragment_tutorial">
+
+        <action
+            android:id="@+id/none"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+
+    </fragment>
+
+</navigation>

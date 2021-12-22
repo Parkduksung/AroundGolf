@@ -1,0 +1,91 @@
+package com.rsupport.rv.viewer.sdk.decorder.scapDec;
+
+//import java.awt.Cursor;
+//import java.awt.Graphics2D;
+//import java.awt.Image;
+//import java.awt.Rectangle;
+//import java.awt.event.KeyEvent;
+//import java.awt.Dimension;
+
+
+import com.rsupport.rv.viewer.sdk.decorder.model.CursorModel;
+import com.rsupport.rv.viewer.sdk.decorder.model.POINT;
+import com.rsupport.rv.viewer.sdk.decorder.model.RECT;
+import com.rsupport.rv.viewer.sdk.decorder.model.RECTS;
+import com.rsupport.rv.viewer.sdk.decorder.model.RGBQUAD;
+
+public interface ICanvas {
+
+	public void setBytesPixel(int bytesPixel);
+	public void setSoftCursorPixels(int[] softCursorPixels);
+//	public void setSoftCursor(Image softCursor);
+	public byte[] getPixels8();
+	public void setPixels8(byte[] pixels8);
+	public int[] getPixels24();
+	public void setPixels24(int[] pixels24);
+	public int getCursorWidth();
+	public void setCursorWidth(int cursorWidth);
+	public int getCursorHeight();
+	public void setCursorHeight(int cursorHeight);
+	public int getHotX();
+	public void setHotX(int hotX);
+	public int getHotY();
+	public void setHotY(int hotY);
+	public void setScreenSize(int fbWidth, int fbHeight, int nBitCount);
+	public void startRtCtrl();
+	public void setSize(int width, int height);
+	public void releaseAll();
+	public void handleUpdatedPixels(int x, int y, int w, int h);
+	public void repaint(int x,int y,int width,int height);
+	public void repaint(long tm,int x,int y,int w,int h);
+	public void softCursorMove(int x, int y);
+//	public void processLocalKeyEvent(KeyEvent evt);
+//	public Graphics2D getMemGraphics();
+	public void runPaint();
+	public void repaintRect(RECT rc);
+	public void repaintRect(RECTS rc);
+	public boolean isInitializedCanvas();
+	public int getFrameWidth();
+	public int getFrameHeight();
+//	public void setCanvasSize(Dimension d);
+//	public Dimension getRemoteRatioScreenSize();	
+	public short getScreenDisplayStyle();
+	public void setChangedScroll();
+	public void fullScreen();
+	public void normalScreen();
+	public void realsizeScreen();
+	public void autosizeScreen();
+//	public Rectangle getCanvasRect();
+	public String saveScreenshot();
+	public void softCursorRepaint();
+	public void drawSrnToSrn(RECT rc, POINT pos);
+	public void registerHooker(boolean bUse);
+	public int getScreenMode();
+	public void setScreenMode(int mode);
+	public byte[] getBytePixels();
+	public void setDefCursorModel(CursorModel curModel, int idx);
+	public void setIMECursor(int ime);
+	public int getBitCount();
+	public void setRatio(int ratio);
+	public int getRatio();
+//	public Image getImage();
+	public void setRatiomode(int mode);
+	public int getRatiomode();
+	public int getAutoHeight(int capX);
+	public int getAutoWidth(int capY);
+	public int getWidth();
+	public int getHeight();
+	public int getMaxCapX(int capX);
+	public int getMaxCapY(int capY);
+	public int setScreenSetting(int mode, int ratio);
+	public void goRatioScreen();
+	public void ratioUserScreen(int ratio);
+//	public Rectangle getViewFinder();
+//	public void setViewFinder(Rectangle rc);
+	public void moveScroll(int moveX, int moveY);
+	public void setBeforeFullScreenTime(long time);
+	public void set8ColorPalette(RGBQUAD[] pRgbTable, int size);
+	public byte[] getScreenPNG();
+	public void setMouseTrace(boolean trace);
+
+}

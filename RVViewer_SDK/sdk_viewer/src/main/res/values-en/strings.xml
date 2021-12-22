@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="mailtofriend_videourl">http://youtu.be/35-VBm_T5wI</string>
+	<string name="mailtofriend_homepage">https://www.rview.com</string>
+	<string name="mailfeedback_to">support.us@rsupport.com</string>
+	<string name="faqnewlink">https://help.rview.com/hc/en-us</string>
+	<string name="url_agreement">https://content.rview.com/en/terms-and-conditions/</string>
+	<string name="url_privacy">https://content.rview.com/en/privacy-policy/</string>
+</resources>

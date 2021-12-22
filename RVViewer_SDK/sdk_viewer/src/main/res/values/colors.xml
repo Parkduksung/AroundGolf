@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+  
+          http://www.apache.org/licenses/LICENSE-2.0
+  
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+    <color name="colorPrimary">#1da1de</color>
+    <color name="colorPrimaryDark">#37749F</color>
+    <color name="colorAccent">#056693</color>
+
+    <drawable name="translucent_background">#99000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+    
+    <!-- <drawable name="agentlist_menu_default">#f4f4f4</drawable> -->
+
+    <!-- QuickMenu -->
+    <color name="quickmenu_add_normal">#44282D32</color>
+    <color name="quickmenu_add_push">#441D2024</color>
+    <color name="quickmenu_bgtype_a_normal">#1DA1DF</color>
+    <color name="quickmenu_bgtype_a_push">#0483BF</color>
+    <color name="quickmenu_bgtype_b_normal">#37749F</color>
+    <color name="quickmenu_bgtype_b_push">#255C8A</color>
+
+    
+    <!-- 기존 버전 사용된 color 항목들은 개발 완료 후 제거 -->
+    <!-- New Version -->
+    <color name="color01">#000000</color>
+    <color name="color02">#333333</color>
+    <color name="color03">#666666</color>
+    <color name="color04">#ffffff</color>
+    <color name="color05">#1da1de</color>
+    <color name="color06">#4bb2e1</color>
+    <color name="color07">#e8e8e8</color>
+    <color name="color08">#d0f0ff</color>
+    <color name="color09">#a2a2a2</color>
+    <color name="color10">#c6c6c6</color>
+    <color name="color11">#3a8cb4</color>
+    <color name="color12">#e3623a</color>
+    <color name="color13">#999999</color>
+    <color name="color14">#111111</color>
+    <color name="color15">#c8cacc</color>
+    <color name="color16">#056693</color>
+    <color name="color17">#444444</color>
+    <color name="color18">#d2d2d2</color>
+    <color name="transparent">#00000000</color>
+    <color name="bg_screensetting">#FFFFFF</color>
+    
+        
+    <!-- Old Version (개발 완료 후 삭제 필요한 항목) -->
+    <color name="solid_red">#f00</color>
+    <color name="solid_green">#f0f0</color>
+    
+    <color name="white">#ffffff</color>
+
+    <!-- START REMOTE EXPLORER -->
+    <color name="re_dialog_alert_recommend">#01CEEE</color>
+    <color name="re_white">#ffffff</color>
+    <color name="re_black">#000000</color>
+    <color name="re_darkgray">#888888</color>
+    <color name="re_dialog_textcolor">#333333</color>
+    <color name="re_dialog_titlecolor">#09394f</color>
+    <color name="re_dark_white">#cad0d7</color>    
+    <color name="re_list_foreground">#3d3d3d</color>
+    <color name="re_list_background">#181818</color>
+    <color name="re_popup_foreground">#e99c00</color>
+    <color name="re_popup_background">#d0d0d0</color>
+    <color name="re_popup_background_text">#333333</color>
+    <color name="re_transfer_filesizeinfo">#cb9218</color>
+    <color name="re_transferhistory_presss">#cb9218</color>
+    <color name="re_transferhistory_filesizecount">#ffae00</color>
+    <color name="re_transferhistory_filesizeinfo">#a7aaaf</color>
+    <color name="re_transferhistory_divline">#3f3f3f</color>
+    <color name="re_popup_divider">#e0e0e0</color>
+    <color name="re_popup_title_line">#e89c00</color>
+    <color name="re_dialog_message_pressed">#e89c00</color>
+    <color name="re_noti_background">#111111</color>
+<!--     <color name="re_manage_foreground">#cb9218</color> -->
+    <!-- Old Version END -->
+    
+    <!-- END REMOTE EXPLORER -->
+    <color name="color_select">#A4999999</color>
+
+    <color name="color_control_background">#3E4046</color>
+</resources>
