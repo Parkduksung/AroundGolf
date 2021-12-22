@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.rsupport.rv.agent.sample"
+        applicationId "com.rsupport.rv.agent.rvviewer_sdk"
         minSdk 23
         targetSdk 31
         versionCode 1
@@ -29,20 +29,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
-    packagingOptions {
-        exclude 'META-INF/LICENSE.txt'
-        exclude 'META-INF/MANIFEST.MF'
-        exclude 'META-INF/NOTICE'
-        exclude 'META-INF/LICENSE'
-        exclude 'META-INF/AL2.0'
-        exclude 'META-INF/LGPL2.1'
-    }
 }
 
 dependencies {
-
-    implementation project(path: ':sdk_viewer')
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'

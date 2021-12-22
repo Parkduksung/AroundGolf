@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.rsupport.rv.viewer.sample">
+    package="com.rsupport.rv.agent.rvviewer_sdk">
 
     <application
         android:allowBackup="true"
